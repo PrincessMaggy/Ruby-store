@@ -14,61 +14,93 @@
 </head>
 <body>
  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <i class="fas fa-gem" id="logo"></i>
-              <!-- <img src="images/ruby.jpg"  alt=""  class="d-inline-block align-text-top"/>  -->
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME <i class="fas fa-home"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CLOTHING</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">BRANDS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">NEW ARRIVALS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">MY CART <i class="fas fa-cart-plus"></i></a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    MORE
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Shoes</a></li>
-                  <li><a class="dropdown-item" href="#">Bags</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#"> Suits
-                  </a></li>
-                </ul>
-              </li>
-              
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
-              <button type="submit" id="btn">Search</button>
-            </form>
+  <header>
+    <!-- navigation menu -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <i class="fas fa-gem" id="logo"></i>
+                <!-- <img src="images/ruby.jpg"  alt=""  class="d-inline-block align-text-top"/>  -->
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"> HOME <i class="fas fa-home"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CLOTHING</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      BRANDS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">SHOES</a></li>
+                    <li><a class="dropdown-item" href="#">BAGS</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"> SUITS
+                    </a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NEW ARRIVALS</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      MORE
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">LOG IN</a></li>
+                    <li><a class="dropdown-item" href="#">SIGN UP</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> <i class="fas fa-cart-plus"></i></a>
+                </li>
+                
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+                <button  type="submit" id="btn">Search</button>
+              </form>
+            </div>
           </div>
+        </nav>
+      </header> 
+
+
+
+      <main class="limited">
+        <div class="container">
+          <section id="order position-relative" class="p-4">
+            <div
+              class="
+                d-flex
+                flex-sm-column flex-md-row
+                justify-content-between
+                align-items-center
+              "
+            >
+              <h1 class="mt-0 mb-4"><b>Your Cart</b></h1>
+              <button id="checkout" class="btn btn-outline-dark">Checkout</button>
+            </div>
+            <div
+              class="order-details pt-3 row justify-content-between br-bottom"
+            ></div>
+            <p class="total text-end d-none">
+              Item Total - <span class="total-price"></span>
+            </p>
+            <div>
+              <p class="no-item-msg d-none ps-4">No item in your Cart</p>
+            </div>
+          </section>
         </div>
-      </nav>
-      
-
-
-
-
-
-
+      </main>
 
 
 
