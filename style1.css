@@ -1,0 +1,147 @@
+html, body{
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    transition: 0.3s;
+    margin:0;
+    padding:0;
+}
+h1, h2, span{
+    font-family: 'Dancing Script', cursive;
+    word-spacing: 1em;
+    font-weight: 700;
+
+}
+button, #btn{
+    background-color: red ;
+    color: white;
+    padding: 0.5em;
+    border:none ;
+    border-radius:15px 50px 30px;
+    margin: 1em 0 1em 0;
+}
+button:hover{
+    color: red;
+    background-color: white;
+    border:1px red outset;
+}
+.btn2{
+background-color: white;
+    color: red;
+    border: 1px red outset;
+}
+.btn2:hover{
+    font-weight: 700;
+}
+
+
+
+
+
+ #logo{
+    color: red;
+     height: 200%;
+} 
+.nav-item .nav-link i{
+    color: red;
+    padding: 0 0 0 0.3em ;
+}
+#search{
+    margin-top: 1em;
+    max-height: 2em;
+}
+
+
+
+
+
+
+.top{
+    padding: 2em 3em 1em 3em;
+}
+.top a {
+    text-decoration: none;
+}
+.top i{
+    padding: 1em;
+    color: red;
+}
+.top span{
+    font-size: 1.3rem;
+    word-spacing: 0.5em;
+}
+
+
+
+
+
+
+.samples h2{
+    padding: 1em;
+    color: red;
+}
+.samples i{
+    color: red;
+}
+
+
+
+
+
+
+.mid{
+    padding: 3em;
+}
+
+
+
+
+
+
+
+
+.bottom{
+    background-color: black;
+    margin: 1em 0 0 0;
+    text-align: center;
+}
+.bottom p{
+    color:white;
+}
+.bottom i{
+    padding: 1em;
+    color: rgb(218, 197, 197);
+}
+.bottom i:hover{
+    color: red;
+}
+.lists{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.link ul {
+  margin: 0 3em 2em 3em; 
+  padding: 1em 2em 0 0;
+}
+.lists ul li {
+    list-style: none;
+}
+.link ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.link ul li a:hover{
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(243, 235, 235);
+    text-align: center;
+    padding: 1em;
+}
