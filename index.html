@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/349ea2471d.js" crossorigin="anonymous"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=MonteCarlo&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
     <link rel="stylesheet" href="style1.css" >
     <title>Home</title>
 </head>
 <body>
- 
+ <!-- navigation menu -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-              <img src="images/ruby.jpg"  alt=""  class="d-inline-block align-text-top"/> </a>
+            <i class="fas fa-gem" id="logo"></i>
+              <!-- <img src="images/ruby.jpg"  alt=""  class="d-inline-block align-text-top"/>  -->
+            </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME <i class="fas fa-home"></i></a>
+                <a class="nav-link active" aria-current="page" href="#"> HOME <i class="fas fa-home"></i></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">CLOTHING</a>
@@ -53,8 +56,8 @@
               
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+              <button  type="submit" id="btn">Search</button>
             </form>
           </div>
         </div>
@@ -62,20 +65,18 @@
       
 
 
-    <section class="mid">
+    <section class="top">
         <div>
-            <h2>RUBY Fashion Store</h2>
+            <h1>RUBY Fashion Store</h1>
             
             <a href="#">Follow </a>
-    
-            <!-- <i class="fas fa-folder-plus"></i> -->
             <i class="fas fa-heart"></i>
-    
-                <!-- <i class="fas fa-share"></i> -->
-                <i class="far fa-comments"></i>
+                
+            <i class="far fa-comments"></i>
         </div>
+        
         <div>
-            <p>Ruby Fashion Store is a women's clothing boutique carrying a variety of fits, styles, and patterns for women of all ages, shapes, and sizes.
+            <p><span>Ruby Fashion Store </span>is a women's clothing boutique carrying a variety of fits, styles, and patterns for women of all ages, shapes, and sizes.
                  We offer a diverse collection of new products every single week, including your favorite clothing items: cute rompers, maxi dresses, knit sweaters, oversized tops, and lightweight cardigans, as well as trendy shoes, accessories, jewelry, activewear, loungewear, and so much more. 
                  Ruby's trendy, yet wearable clothes will have you feeling like your best self, no matter where you're headed. 
                  You can shop with us online or at any of our retail locations across the southeast, including stores in georgia, alabama, south carolina, and tennessee. 
@@ -85,61 +86,164 @@
     </section>
 
 
-    <section class="samples">
-        <div class="shoes">
-            <p> Shoes</p>
-            <img src="images/shoe1.jpg">
-            <img src="images/shoe3.jpg">
-            <img src="images/shoe2.jpg">
-            <img src="images/shoe4.jpg">
+
+
+
+<!-- product section -->
+
+<section class="samples py-5">
+  <div class="container">
+      <h2> Shoes</h2>
+
+      <div class="row">
+          <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
+              <div class="card px-2 pb-4 shadow">
+                 <img src="images/shoe1.jpg" class="img img-fluid">
+                  <a href="#" class="heart mb-1 "><i class="fa fa-heart fa-2x"></i></a>
+                  <h5 class="card-title"> ghcfyjfsxrfzgndz</h5>
+                  <h5 class="info">$10</h5>
+                  <a href="" class="btn btn-outline-info btn-block  mt-1" id="btn" > ORDER </a>
+              </div>
+          </div>
+
+          
+          <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
+            <div class="card px-2 pb-4 shadow">
+               <img src="images/shoe2.jpg" class="img img-fluid">
+                <a href="#" class="heart mb-1 "><i class="fa fa-heart fa-2x"></i></a>
+                <h5 class="card-title"> ghcfyjfsxrfzgndz</h5>
+                <h5 class="info">$10</h5>
+                <a href="" class="btn btn-outline-info btn-block  mt-1" id="btn" > ORDER </a>
+            </div>
         </div>
-        <div class="accessories">
-            <p> Accessories</p>
-            <img src="images/accessory1.jpg">
-            <img src="images/accessory2.jpg">
-            <img src="images/accessory3.jpg">
-            <img src="images/accessory4.jpg">
 
+        <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
+          <div class="card px-2 pb-4 shadow">
+             <img src="images/shoe3.jpg" class="img img-fluid">
+              <a href="#" class="heart mb-1 "><i class="fa fa-heart fa-2x"></i></a>
+              <h5 class="card-title"> ghcfyjfsxrfzgndz</h5>
+              <h5 class="info">$10</h5>
+              <a href="" class="btn btn-outline-info btn-block  mt-1" id="btn" > ORDER </a>
+          </div>
         </div>
-        <div>
-            <p>Casual Tops</p>
-            <img src="images/top1.jpg">
-            <img src="images/top2.jpg">
-            <img src="images/top3.jpg">
-            <img src="images/top4.jpg">
+      </div>
+  </div>
+
+
+  <div class="container">
+    <h2> Accessories</h2>
+
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
+            <div class="card px-2 pb-4 shadow">
+              <img src="images/accessory1.jpg"class="img img-fluid">
+                <a href="#" class="heart mb-1 "><i class="fa fa-heart fa-2x"></i></a>
+                <h5 class="card-title"> ghcfyjfsxrfzgndz</h5>
+                <h5 class="info">$10</h5>
+                <a href="" class="btn btn-outline-info btn-block  mt-1" id="btn" > ORDER </a>
+            </div>
         </div>
 
-        <button>SHOP OUR NEWEST ARRIVALS</button>
+        
+        <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
+          <div class="card px-2 pb-4 shadow">
+            <img src="images/accessory2.jpg"class="img img-fluid">
+              <a href="#" class="heart mb-1 "><i class="fa fa-heart fa-2x"></i></a>
+              <h5 class="card-title"> ghcfyjfsxrfzgndz</h5>
+              <h5 class="info">$10</h5>
+              <a href="" class="btn btn-outline-info btn-block  mt-1" id="btn" > ORDER </a>
+          </div>
+      </div>
 
-
-
-    <section>
-        <div>
-            <img src="images/ruby.jpg">
-
+      <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
+        <div class="card px-2 pb-4 shadow">
+          <img src="images/accessory3.jpg"class="img img-fluid">
+            <a href="#" class="heart mb-1 "><i class="fa fa-heart fa-2x"></i></a>
+            <h5 class="card-title"> ghcfyjfsxrfzgndz</h5>
+            <h5 class="info">$10</h5>
+            <a href="" class="btn btn-outline-info btn-block  mt-1" id="btn" > ORDER </a>
         </div>
-       <p> RUBY FASHION STORE </br>
-        WE TRANSFORM IDEAS INTO PROFITABLE BUSINESSES</p>
-        <button> <i class="far fa-envelope"></i> Contact Us</button>
+       </div>
+        
+    </div>
+</div>
+
+
+<div class="container">
+  <h2>Casual Tops</h2>
+
+  <div class="row">
+      <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
+          <div class="card px-2 pb-4 shadow">
+            <img src="images/top4.jpg"class="img img-fluid">
+              <a href="#" class="heart mb-1 "><i class="fa fa-heart fa-2x"></i></a>
+              <h5 class="card-title"> ghcfyjfsxrfzgndz</h5>
+              <h5 class="info">$10</h5>
+              <a href="" class="btn btn-outline-info btn-block  mt-1" id="btn" > ORDER </a>
+          </div>
+      </div>
+
+      
+      <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
+        <div class="card px-2 pb-4 shadow">
+          <img src="images/top4.jpg"class="img img-fluid">
+            <a href="#" class="heart mb-1 "><i class="fa fa-heart fa-2x"></i></a>
+            <h5 class="card-title"> ghcfyjfsxrfzgndz</h5>
+            <h5 class="info">$10</h5>
+            <a href="" class="btn btn-outline-info btn-block  mt-1" id="btn" > ORDER </a>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
+      <div class="card px-2 pb-4 shadow">
+        <img src="images/top4.jpg"class="img img-fluid">
+          <a href="#" class="heart mb-1 "><i class="fa fa-heart fa-2x"></i></a>
+          <h5 class="card-title"> ghcfyjfsxrfzgndz</h5>
+          <h5 class="info">$10</h5>
+          <a href="" class="btn btn-outline-info btn-block  mt-1" id="btn" > ORDER </a>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <button class="btn2">SHOP OUR NEWEST ARRIVALS</button>
+    </div>
+</section>
+
+
+
+   
+
+
+
+  <!-- mid section -->
+    <section class="mid">
+        <i class="fas fa-gem" id="logo"></i>
+  
+       <h2> <b>RUBY Fashion Store </b></h2>
+        <p> WE TRANSFORM IDEAS INTO PROFITABLE BUSINESSES.</p>
+        <button class="btn2"> <i class="far fa-envelope"></i> CONTACT US</button>
     </section>
 
 
 
     <section class="bottom">
-        <a href="#" id="logo">RUBY
-        </a>
-
-        <p> Ruby Coutoure is the world’s leading community for creatives to share, grow, and get hired.</p>
-          <div>
-            <i class="fas fa-baseball-ball"></i>
+      <i class="fas fa-gem" id="logo"></i>
+        <p><span> Ruby Fashion Store </span>is the world’s leading community for creatives to share, grow, and get hired.</p>
+          
+        <div id="icons">
+            <i class="fas fa-gem"></i>
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-pinterest"></i>
           </div> 
-           <div> 
-             <ul>
-                 <div>
+
+           <div class="lists"> 
+                 <div class="link">
+                   <ul>
                     <li><a href="#">For designers</a></li>
                     <li><a href="#"> Go Pro!</a></li>
                     <li><a href="#">Explore design work</a></li>
@@ -147,15 +251,11 @@
                     <li><a href="#"> Code of conduct</a></li>
                     <li><a href="#">Weekly Warm-Up</a></li>
                     <li><a href="#"> Code of conduct</a></li>
-                </div>
-                <div>
-                    <li><a href="#"> Hire designers</a></li>
-                    <li><a href="#">Post a freelance project</a></li>
-                    <li><a href="#"> Search for designers</a></li>
-                    <li><a href="#">Brands</a></li>
-                    <li><a href="#">Advertise with us</a></li>
-                </div>
-                <div>
+                    </ul>
+                  </div>
+
+                <div class="link">
+                  <ul>
                     <li><a href="#">Company</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Careers</a></li>
@@ -164,8 +264,11 @@
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Terms of service</a></li>
                     <li><a href="#">Privacy policy</a></li>
+                  </ul>
                 </div>
-                <div>
+
+                <div class="link">
+                  <ul>
                     <li><a href="#">Directories</a></li>
                     <li><a href="#">Design jobs</a></li>
                     <li><a href="#">Designers for hire</a></li>
@@ -173,19 +276,28 @@
                     <li><a href="#">Tags</a></li>
                     <li><a href="#">Design assets</a></li>
                     <li><a href="#">Shop Creative Market</a></li>
+                    </ul>
                 </div>
-             </ul>
-          
-             
+                <div class="link">
+                  <ul>
+                      <li><a href="#"> Hire designers</a></li>
+                      <li><a href="#">Post a freelance project</a></li>
+                      <li><a href="#"> Search for designers</a></li>
+                      <li><a href="#">Brands</a></li>
+                      <li><a href="#">Advertise with us</a></li>
+                    </ul>
+                  </div>
+            
         </div>
 
     </section>
 
 
-
+<!-- footer section -->
     <footer>
+      <i class="fas fa-gem" id="logo"></i>     
         <p> &copy 2021 Ruby. All rights reserved.</p>
-        <img src="images/ruby.jpg">      
+        
         
     </footer>
 
