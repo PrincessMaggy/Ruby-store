@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=MonteCarlo&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="style1.css" >
+    <link rel="stylesheet" href="style.css" >
     <title>Home</title>
 </head>
 <body>
@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"> HOME <i class="fas fa-home"></i></a>
+                  <a class="nav-link active" aria-current="page" href="index.html"> HOME <i class="fas fa-home"></i></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">CLOTHING</a>
@@ -59,7 +59,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> <i class="fas fa-cart-plus"></i></a>
+                  <a class="nav-link" href="#cart"> <i class="fas fa-cart-plus"></i></a>
                 </li>
                 
               </ul>
@@ -94,46 +94,63 @@
     </section>
 
 
-
-
-
 <!-- product section -->
 
 <section class="samples py-5">
   <div class="container">
       <h2> Shoes</h2>
 
-      <div class="row">
-          <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
-              <div class="card px-2 pb-4 shadow">
-                 <img src="images/shoe1.jpg" class="img img-fluid">
-                  <a href="#" class="heart mb-1 "><i class="far fa-heart fa-2x"></i></a>
-                  <h5 class="card-title"> Harlem Combat</h5>
-                  <h5 class="info">$10</h5>
-                  <a href="" class="btn btn-block  mt-1" id="btn" > ORDER </a>
-              </div>
+
+      <div class="row shop-items">
+        <div class="col-lg-4 col-sm-6 col-xl-4 my-4 shop-item">
+          <div class="card px-0 pb-4 shadow">
+           <a href="product.html" class ="shop-item-image"> 
+             <img src="images/shoe1.jpg" class="img img-fluid"> 
+            </a>
+               <div class="px-2 py-2 shop-item-details" id="cart-box" style="text-align: center;">
+                  <h5 class="shop-item-title"> Harlem Combat </h5>
+                    <a href="#">
+                      <i class="fas fa-cart-plus px-2 shop-item-button" ></i>
+                    </a>
+                 
+                  <h6 class="ms-1 shop-item-price">$15</h6> <h6 class="ms-1"><s>$130.00</s></h6>
+                </div>
           </div>
+        </div>
 
           
-          <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
-            <div class="card px-2 pb-4 shadow">
-               <img src="images/shoe2.jpg" class="img img-fluid">
-                <a href="#" class="heart mb-1 "><i class="far fa-heart fa-2x"></i></a>
-                <h5 class="card-title"> Houston Pointed Toe</h5>
-                <h5 class="info">$10</h5>
-                <a href="" class="btn btn-block  mt-1" id="btn" > ORDER </a>
+          <div class="col-lg-4 col-sm-6 col-xl-4 my-4  shop-item">
+            <div class="card px-0 pb-4 shadow">
+             <a href="product.html"  class ="shop-item-image"> 
+               <img src="images/shoe2.jpg" class="img img-fluid"> 
+              </a>
+                 <div class="px-2 py-2 shop-item-details" id="cart-box" style="text-align: center;">
+                    <h5 class="shop-item-title"> Harlem Heels </h5>
+                      <a href="#">
+                        <i class="fas fa-cart-plus px-2 shop-item-button" ></i>
+                      </a>
+                    
+                    <h6 class="ms-1 shop-item-price">$10</h6> <h6 class="ms-1 prev-price"><s>$70.00</s></h6>
+                  </div>
             </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
-          <div class="card px-2 pb-4 shadow">
-             <img src="images/shoe3.jpg" class="img img-fluid">
-              <a href="#" class="heart mb-1 "><i class="far fa-heart fa-2x"></i></a>
-              <h5 class="card-title"> Downtown Platform </h5>
-              <h5 class="info">$10</h5>
-              <a href="" class="btn btn-block  mt-1" id="btn" > ORDER </a>
           </div>
-        </div>
+
+
+          <div class="col-lg-4 col-sm-6 col-xl-4 my-4  shop-item">
+            <div class="card px-0 pb-4 shadow">
+             <a href="product.html"  class ="shop-item-image"> 
+               <img src="images/shoe3.jpg" class="img img-fluid"> 
+              </a>
+                 <div class="px-2 py-2 shop-item-details" id="cart-box" style="text-align: center;">
+                    <h5 class="shop-item-title"> Downtown Platform </h5>
+                      <a href="#">
+                        <i class="fas fa-cart-plus px-2 shop-item-button" ></i>
+                      </a>
+                    
+                    <h6 class="ms-1 shop-item-price">$20</h6> <h6 class="ms-1 prev-price"><s>$190.00</s></h6>
+                  </div>
+            </div>
+          </div>
       </div>
   </div>
 
@@ -141,37 +158,54 @@
   <div class="container">
     <h2> Accessories</h2>
 
-    <div class="row">
-        <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
-            <div class="card px-2 pb-4 shadow">
-              <img src="images/accessory1.jpg"class="img img-fluid">
-                <a href="#" class="heart mb-1 "><i class="far fa-heart fa-2x"></i></a>
-                <h5 class="card-title"> Carmen Gold Layered Bracelet</h5>
-                <h5 class="info">$10</h5>
-                <a href="" class="btn btn-block  mt-1" id="btn" > ORDER </a>
-            </div>
+    <div class="row shop-items">
+      <div class="col-lg-4 col-sm-6 col-xl-4 my-4 shop-item">
+        <div class="card px-0 pb-4 shadow">
+         <a href="product.html"  class ="shop-item-image"> 
+           <img src="images/accessory1.jpg" class="img img-fluid"> 
+          </a>
+             <div class="px-2 py-2 shop-item-details" id="cart-box" style="text-align: center;">
+                <h5 class="shop-item-title"> Carmen Gold Layered Bracelet </h5>
+                  <a href="#">
+                    <i class="fas fa-cart-plus px-2 shop-item-button" ></i>
+                  </a>
+               
+                <h6 class="ms-1 shop-item-price">$76</h6> <h6 class="ms-1 prev-price"><s>$169.00</s></h6>
+              </div>
         </div>
-
-        
-        <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
-          <div class="card px-2 pb-4 shadow">
-            <img src="images/accessory2.jpg"class="img img-fluid">
-              <a href="#" class="heart mb-1 "><i class="far fa-heart fa-2x"></i></a>
-              <h5 class="card-title"> Reagan Gold Layered Bracelet Set</h5>
-              <h5 class="info">$10</h5>
-              <a href="" class="btn btn-block  mt-1" id="btn" > ORDER </a>
-          </div>
       </div>
 
-      <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
-        <div class="card px-2 pb-4 shadow">
-          <img src="images/accessory3.jpg"class="img img-fluid">
-            <a href="#" class="heart mb-1 "><i class="far fa-heart fa-2x"></i></a>
-            <h5 class="card-title"> Logan Acrylic Drop Earrings</h5>
-            <h5 class="info">$10</h5>
-            <a href="" class="btn btn-block  mt-1" id="btn" > ORDER </a>
+      <div class="col-lg-4 col-sm-6 col-xl-4 my-4 shop-item">
+        <div class="card px-0 pb-4 shadow">
+         <a href="product.html"  class ="shop-item-image"> 
+           <img src="images/accessory2.jpg" class="img img-fluid"> 
+          </a>
+             <div class="px-2 py-2 shop-item-details" id="cart-box" style="text-align: center;">
+                <h5 class="shop-item-title"> Raegen Gold Layered Bracelet </h5>
+                  <a href="#">
+                    <i class="fas fa-cart-plus px-2 shop-item-button" ></i>
+                  </a>
+                
+                <h6 class="ms-1 shop-item-price">$46</h6> <h6 class="ms-1 prev-price"><s>$69.00</s></h6>
+              </div>
         </div>
-       </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6 col-xl-4 my-4 shop-item">
+        <div class="card px-0 pb-4 shadow">
+         <a href="product.html"  class ="shop-item-image"> 
+           <img src="images/accessory3.jpg" class="img img-fluid"> 
+          </a>
+             <div class="px-2 py-2 shop-item-details" id="cart-box" style="text-align: center;">
+                <h5 class="shop-item-title">Logan Acrylic Drop Earrings  </h5>
+                  <a href="#">
+                    <i class="fas fa-cart-plus px-2 shop-item-button" ></i>
+                  </a>
+                
+                <h6 class="ms-1 shop-item-price">$63</h6> <h6 class="ms-1 prev-price"><s>$109.00</s></h6>
+              </div>
+        </div>
+      </div>
         
     </div>
 </div>
@@ -180,36 +214,56 @@
 <div class="container">
   <h2>Casual Tops</h2>
 
-  <div class="row">
-      <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
-          <div class="card px-2 pb-4 shadow">
-            <img src="images/top1.jpg"class="img img-fluid">
-              <a href="#" class="heart mb-1 "><i class="far fa-heart fa-2x"></i></a>
-              <h5 class="card-title"> Hayden Everyday Tee - Olive</h5>
-              <h5 class="info">$10</h5>
-              <a href="" class="btn btn-block  mt-1" id="btn" > ORDER </a>
-          </div>
+  <div class="row shop-items">
+    <div class="col-lg-4 col-sm-6 col-xl-4 my-4 shop-item">
+      <div class="card px-0 pb-4 shadow">
+       <a href="product.html"  class ="shop-item-image"> 
+         <img src="images/top1.jpg" class="img img-fluid"> 
+        </a>
+           <div class="px-2 py-2 shop-item-details" id="cart-box" style="text-align: center;">
+              <h5 class="shop-item-title"> Hayden Everyday Tee </h5>
+                <a href="#">
+                  <i class="fas fa-cart-plus px- shop-item-button2" ></i>
+                </a>
+            
+              <h6 class="ms-1 shop-item-price">$15</h6> <h6 class="ms-1 prev-price"><s>$19.00</s></h6>
+            </div>
       </div>
-
-      
-      <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
-        <div class="card px-2 pb-4 shadow">
-          <img src="images/top2.jpg"class="img img-fluid">
-            <a href="#" class="heart mb-1 "><i class="far fa-heart fa-2x"></i></a>
-            <h5 class="card-title"> Hayden Everyday Tee - Black</h5>
-            <h5 class="info">$10</h5>
-            <a href="" class="btn btn-block  mt-1" id="btn" > ORDER </a>
-        </div>
     </div>
 
-    <div class="col-lg-4 col-sm-6 col-xl-4 my-4">
-      <div class="card px-2 pb-4 shadow">
-        <img src="images/top3.jpg"class="img img-fluid">
-          <a href="#" class="heart mb-1 "><i class="far fa-heart fa-2x"></i></a>
-          <h5 class="card-title">
-            Lennon Everyday Knit Tank - Ivory</h5>
-          <h5 class="info">$10</h5>
-          <a href="" class="btn btn-block  mt-1" id="btn" > ORDER </a>
+      
+    <div class="col-lg-4 col-sm-6 col-xl-4 my-4 shop-item">
+      <div class="card px-0 pb-4 shadow">
+       <a href="product.html"  class ="shop-item-image"> 
+         <img src="images/top2.jpg" class="img img-fluid"> 
+        </a>
+           <div class="px-2 py-2 shop-item-details" id="cart-box" style="text-align: center;">
+              <h5 class="shop-item-title"> Casual Tee  </h5>
+                <a href="#">
+                  <i class="fas fa-cart-plus px-2 shop-item-button" ></i>
+                </a>
+              
+              <h6 class="ms-1 shop-item-price">$25</h6> <h6 class="ms-1 prev-price"><s>$39.00</s></h6>
+            </div>
+      </div>
+    </div>
+
+
+
+    
+    <div class="col-lg-4 col-sm-6 col-xl-4 my-4 shop-item">
+      <div class="card px-0 pb-4 shadow">
+       <a href="product.html"  class ="shop-item-image"> 
+         <img src="images/top3.jpg" class="img img-fluid"> 
+        </a>
+           <div class="px-2 py-2 shop-item-details" id="cart-box" style="text-align: center;">
+              <h5 class="shop-item-title"> Lennon Everyday Knit Tank </h5>
+                <a href="#">
+                  <i class="fas fa-cart-plus px-2 shop-item-button" ></i>
+                </a>
+            
+              <h6 class="ms-1 shop-item-price">$35</h6> <h6 class="ms-1 prev-price"><s>$50.00</s></h6>
+            </div>
       </div>
     </div>
       
@@ -220,22 +274,6 @@
     <button class="btn2">SHOP OUR NEWEST ARRIVALS</button>
     </div>
 </section>
-
-
-
-   
-
-
-
-  <!-- mid section -->
-    <section class="mid">
-        <i class="fas fa-gem" id="logo"></i>
-  
-       <h2> <b>RUBY Fashion Store </b></h2>
-        <p> WE TRANSFORM IDEAS INTO PROFITABLE BUSINESSES.</p>
-        <button class="btn2"> <i class="far fa-envelope"></i> CONTACT US</button>
-    </section>
-
 
 
 
@@ -274,8 +312,37 @@
 
 
 
+<!-- cart section -->
+
+<section class="container cart" id="cart">
+  <h2 class="section-header">CART</h2>
+  <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITEM</span>
+      <span class="cart-price cart-header cart-column">PRICE</span>
+      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+  </div>
+  <div class="cart-items">
+  </div>
+  <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">$0</span>
+  </div>
+  <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+</section>
 
 
+
+
+
+
+  <!-- mid section -->
+  <section class="mid">
+    <i class="fas fa-gem" id="logo"></i>
+
+   <h2> <b>RUBY Fashion Store </b></h2>
+    <p> WE TRANSFORM IDEAS INTO PROFITABLE BUSINESSES.</p>
+    <button class="btn2"> <i class="far fa-envelope"></i> CONTACT US</button>
+</section>
 
 
 
@@ -361,8 +428,8 @@
         
         
     </footer>
-
-   <script src="index.js"></script>
+    <script src="index.js"></script>
+   <script src="cart.js"></script>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

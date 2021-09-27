@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=MonteCarlo&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="style1.css" >
+    <link rel="stylesheet" href="style.css" >
     <title>Product Page</title>
 </head>
 <body>
@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"> HOME <i class="fas fa-home"></i></a>
+                  <a class="nav-link active" aria-current="page" href="index.html"> HOME <i class="fas fa-home"></i></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">CLOTHING</a>
@@ -60,7 +60,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> <i class="fas fa-cart-plus"></i></a>
+                  <a class="nav-link" href=""> <i class="fas fa-cart-plus"></i></a>
                 </li>
                 
               </ul>
@@ -110,7 +110,9 @@
               </ul>
             </div>
 
-
+            <section>
+              <h4> <b>We're currently out of stock. You can order for other products here.</b></h4>
+            </section>
 
 
 
@@ -283,8 +285,8 @@
                         
                           <div class="card px-0 pb-4 shadow">
                             <img src="images/accessory2.jpg" class="img img-fluid">
-                               <div class="px-3 py-2" id="cart-box">
-                                  <h5 class="card-title"> Carmen Gold Layered Bracelet <a href="#"><i class="fas fa-cart-plus px-1"></i></a></h5>
+                               <div class="px-3 py-2" id="cart-box" style="text-align: center;">
+                                  <h5 class="card-title"> Carmen Layered Bracelet <a href="#"><i class="fas fa-cart-plus px-1"></i></a></h5>
                                   <h6 class="ms-1">$10</h6> <h6 class="ms-1 prev-price"><s>$100.00</s></h6>
                                   <a href="#" class="btn btn-block  mt-1 btn3"> Add to wishlist </a>
                                 </div>
@@ -295,7 +297,7 @@
                         
                             <div class="card px-0 pb-4 shadow">
                               <img src="images/shoe2.jpg" class="img img-fluid">
-                                 <div class="px-3 py-2" id="cart-box">
+                                 <div class="px-3 py-2" id="cart-box" style="text-align: center;">
                                     <h5 class="card-title"> Harlem Combat <a href="#"><i class="fas fa-cart-plus px-1"></i></a></h5>
                                     <h6 class="ms-1">$10</h6> <h6 class="ms-1 prev-price"><s>$130.00</s></h6>
                                     <a href="#" class="btn btn-block  mt-1 btn3"> Add to wishlist </a>
@@ -307,7 +309,7 @@
                         
                             <div class="card px-0 pb-4 shadow">
                               <img src="images/top4.jpg" class="img img-fluid">
-                                 <div class="px-3 py-2" id="cart-box">
+                                 <div class="px-3 py-2" id="cart-box" style="text-align: center;">
                                     <h5 class="card-title"> Lennon Everyday Knit Tank  <a href="#"><i class="fas fa-cart-plus px-1"></i></a></h5>
                                     <h6 class="ms-1">$10</h6> <h6 class="ms-1 prev-price"><s>$130.00</s></h6>
                                     <a href="#" class="btn btn-block  mt-1 btn3"> Add to wishlist </a>
@@ -404,6 +406,7 @@
     </footer>
 
    <script src="index.js"></script>
+   <script src="cart.js"></script>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

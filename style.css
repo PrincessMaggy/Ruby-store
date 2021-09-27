@@ -10,7 +10,7 @@ h1, h2, span{
     font-weight: 700;
 
 }
-button, #btn{
+button{
     background-color: red ;
     color: white;
     padding: 0.5em;
@@ -203,7 +203,7 @@ footer{
     }
     .lists{
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
 }
